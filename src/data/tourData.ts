@@ -230,34 +230,56 @@ export const WHY_BOOK_ITEMS = [
 export const REVIEWS: Review[] = [
   {
     id: "rev-1",
-    name: "Priya S.",
-    location: "Bangalore",
+    name: "Jignesh & Hiral Patel",
+    location: "Satellite, Ahmedabad",
     rating: 5,
-    comment: "Excellent arrangement by My Happy Journey. Hotels and houseboat were amazing. Highly recommended!",
+    tripType: "6N/7D Honeymoon Special",
+    comment: "We flew direct from Ahmedabad to Kochi. MyHappyJourney arranged our candle-light dinner in Munnar and private premium houseboat in Alleppey! As pure vegetarians, our driver Shibu took us to authentic Gujarati & Jain food places every single day. Unforgettable honeymoon!",
     date: "2 weeks ago"
   },
   {
     id: "rev-2",
-    name: "Rahul M.",
-    location: "Chennai",
+    name: "Rajeshbhai & Falguni Shah",
+    location: "Paldi, Ahmedabad",
     rating: 5,
-    comment: "Very professional team and well planned itinerary. We had a memorable family trip.",
-    date: "1 month ago"
+    tripType: "25th Silver Jubilee Trip",
+    comment: "Booking our anniversary tour from Ahmedabad with MyHappyJourney was the best decision. Zero hassle from airport pickup to drop. 100% pure Jain food was prepared on our private houseboat as promised. Outstanding hospitality!",
+    date: "3 weeks ago"
   },
   {
     id: "rev-3",
-    name: "Sunil K.",
-    location: "Hyderabad",
+    name: "Chirag & Pooja Joshi",
+    location: "Alkapuri, Vadodara",
     rating: 5,
-    comment: "This was our 3rd trip with them. Always the best service and support. Thank you!",
+    tripType: "Couple Kerala Getaway",
+    comment: "From Vadodara we booked the 5N/6D Munnar, Thekkady & Alleppey tour. The views from our Munnar resort balcony were breathtaking. Our Hindi-speaking driver drove very safely on the ghat roads. Truly 5-star service!",
     date: "1 month ago"
   },
   {
     id: "rev-4",
-    name: "Ananya Sharma",
-    location: "Mumbai",
+    name: "Amit & Kinjal Mehta",
+    location: "Vesu, Surat",
     rating: 5,
-    comment: "The Alleppey houseboat was clean, food was superb, and our driver Prasad was super polite. 10/10 service!",
+    tripType: "Family Holiday with Kids",
+    comment: "Travelled with our parents and two kids from Surat. Clean Innova car, very patient Hindi speaking driver, and wonderful resort rooms. They even customized the itinerary so our elderly parents didn't feel tired. Highly recommended to all Gujarati families!",
+    date: "1 month ago"
+  },
+  {
+    id: "rev-5",
+    name: "Dr. Bhavik & Dr. Neha Desai",
+    location: "Vastrapur, Ahmedabad",
+    rating: 5,
+    tripType: "Romantic Honeymoon Package",
+    comment: "Planned our dream Kerala vacation with them from Ahmedabad. The tea plantation walk, Kathakali show, and Kovalam beach resort stay were extraordinary. Transparent pricing with zero hidden charges.",
+    date: "2 months ago"
+  },
+  {
+    id: "rev-6",
+    name: "Hardik & Riddhi Trivedi",
+    location: "Kalawad Road, Rajkot",
+    rating: 5,
+    tripType: "Kerala Backwaters & Hills",
+    comment: "Best travel agency for Kerala from Gujarat! The support team was reachable on WhatsApp within seconds throughout the tour. Everything went exactly as written in the day-by-day plan.",
     date: "2 months ago"
   }
 ];
@@ -340,5 +362,10 @@ export const TRUST_ITEMS: TrustItem[] = [
     iconName: "Headphones",
     title: "24×7",
     subtitle: "Customer Support"
+  },
+  {
+    iconName: "VegHindi",
+    title: "Pure Veg Options",
+    subtitle: "Hindi Speaking Team"
   }
 ];

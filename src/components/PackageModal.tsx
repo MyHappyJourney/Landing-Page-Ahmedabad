@@ -56,8 +56,8 @@ export const PackageModal: React.FC<PackageModalProps> = ({ pkg, onClose, onGetQ
             <div>
               <p className="text-xs font-bold text-[#0B3996] uppercase">Package Special Offer</p>
               <div className="flex items-baseline gap-2 mt-0.5">
-                <span className="text-xl sm:text-2xl font-black text-[#0B3996]">
-                  GET BEST QUOTE →
+                <span className="text-lg sm:text-xl font-black text-[#0B3996]">
+                  All-Inclusive Plan
                 </span>
               </div>
             </div>
@@ -115,7 +115,7 @@ export const PackageModal: React.FC<PackageModalProps> = ({ pkg, onClose, onGetQ
             }}
             className="w-full py-3 bg-[#FF4B00] hover:bg-[#e04200] text-white font-extrabold rounded-xl text-center text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md"
           >
-            <span>Get Best Quote</span>
+            <span>Get Best Quote in 10 Mins</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

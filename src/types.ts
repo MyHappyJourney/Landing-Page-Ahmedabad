@@ -31,6 +31,8 @@ export interface Review {
   comment: string;
   date?: string;
   avatar?: string;
+  tripPhoto?: string;
+  tripType?: string;
 }
 
 export interface LeadFormData {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Users, Tag, Sliders, Headphones, ShieldCheck, Star, CheckCircle } from 'lucide-react';
+import { Award, Users, Tag, Sliders, Headphones, ShieldCheck, Star, CheckCircle, Utensils } from 'lucide-react';
 import { TRUST_ITEMS } from '../data/tourData';
 
 export const TrustStrip: React.FC = () => {
@@ -24,6 +24,9 @@ export const TrustStrip: React.FC = () => {
         return <Sliders className="w-5 h-5 sm:w-6 sm:h-6 text-[#0B3996]" />;
       case 'Headphones':
         return <Headphones className="w-5 h-5 sm:w-6 sm:h-6 text-[#0B3996]" />;
+      case 'VegHindi':
+      case 'Utensils':
+        return <Utensils className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" />;
       default:
         return <Award className="w-5 h-5 sm:w-6 sm:h-6 text-[#0B3996]" />;
     }
@@ -88,14 +91,12 @@ export const TrustStrip: React.FC = () => {
 
         </div>
 
-        {/* 7-Item Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-2.5 sm:gap-4">
+        {/* 8-Item Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 xl:grid-cols-8 gap-2.5 sm:gap-3">
           {TRUST_ITEMS.map((item, index) => (
             <div
               key={index}
-              className={`flex items-center gap-2.5 p-2 sm:p-2.5 rounded-xl bg-[#F6F7F6] sm:bg-white border border-gray-100 hover:border-blue-200 transition-colors shadow-2xs ${
-                index === TRUST_ITEMS.length - 1 && TRUST_ITEMS.length % 2 !== 0 ? 'col-span-2 sm:col-span-1' : ''
-              }`}
+              className="flex items-center gap-2.5 p-2 sm:p-2.5 rounded-xl bg-[#F6F7F6] sm:bg-white border border-gray-100 hover:border-blue-200 transition-colors shadow-2xs"
             >
               <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-[#EBF2FF] flex items-center justify-center shrink-0 border border-[#0B3996]/10">
                 {getIcon(item.iconName)}

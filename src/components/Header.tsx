@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Menu, X, Star, ShieldCheck, ChevronRight } from 'lucide-react';
+import { Phone, Menu, X, Star, ShieldCheck, ChevronRight, Users } from 'lucide-react';
 import { PHONE_NUMBER, DISPLAY_PHONE } from '../data/tourData';
 import { Logo } from './Logo';
 
@@ -32,7 +32,7 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick, onPackageSelect })
         </a>
 
         {/* Desktop Trust & Stats (Hidden on Mobile) */}
-        <div className="hidden lg:flex items-center gap-6 text-xs font-medium text-gray-700">
+        <div className="hidden lg:flex items-center gap-3.5 xl:gap-5 text-xs font-medium text-gray-700">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full bg-[#EBF2FF] flex items-center justify-center text-[#0B3996]">
               <ShieldCheck className="w-4 h-4" />
@@ -60,6 +60,18 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick, onPackageSelect })
               ))}
             </div>
             <span className="text-[10px] font-semibold text-gray-600 ml-0.5">Google Rating</span>
+          </div>
+
+          <div className="h-8 w-[1px] bg-gray-200"></div>
+
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-700">
+              <Users className="w-4 h-4" />
+            </div>
+            <div>
+              <p className="font-bold text-gray-900 leading-tight">Trusted by 200+</p>
+              <p className="text-[11px] text-emerald-700 font-semibold">Ahmedabad Families</p>
+            </div>
           </div>
         </div>
 

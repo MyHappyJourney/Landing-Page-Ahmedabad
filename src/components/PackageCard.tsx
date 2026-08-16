@@ -96,16 +96,11 @@ export const PackageCard: React.FC<PackageCardProps> = ({ pkg, onViewDetails, on
             </span>
           </div>
 
-          <div className="flex items-center justify-between mb-3 py-0.5">
-            <div>
-              <p className="text-[10px] uppercase font-bold text-gray-400">Package Pricing</p>
-              <span className="font-black text-lg sm:text-xl text-[#0B3996]">
-                GET BEST QUOTE →
-              </span>
-            </div>
-            <span className="text-[10px] text-[#0B3996] font-extrabold bg-[#EBF2FF] px-2 py-1 rounded">
-              Best Rate
-            </span>
+          <div className="mb-3 py-0.5">
+            <p className="text-[10px] uppercase font-bold text-gray-400">Package Pricing</p>
+            <p className="font-extrabold text-xs sm:text-sm text-[#0B3996] uppercase tracking-tight">
+              PRICING FOR AHMEDABAD TRAVELLERS
+            </p>
           </div>
 
           <div className="space-y-2">
@@ -118,12 +113,12 @@ export const PackageCard: React.FC<PackageCardProps> = ({ pkg, onViewDetails, on
               </button>
               <button
                 onClick={() => onGetQuote(pkg)}
-                className={`w-full py-2.5 px-2 text-white text-xs font-bold rounded-xl shadow-xs transition-colors flex items-center justify-center gap-1 cursor-pointer ${
+                className={`w-full py-2.5 px-1.5 text-white text-[11px] sm:text-xs font-black rounded-xl shadow-xs transition-colors flex items-center justify-center gap-1 cursor-pointer ${
                   pkg.isPopular ? 'bg-[#FF4B00] hover:bg-[#e04200]' : 'bg-[#0B3996] hover:bg-[#082b75]'
                 }`}
               >
-                <span>GET BEST QUOTE</span>
-                <ArrowRight className="w-3.5 h-3.5" />
+                <span className="text-center leading-tight">GET BEST QUOTE IN 10 MINS</span>
+                <ArrowRight className="w-3.5 h-3.5 shrink-0" />
               </button>
             </div>
 
